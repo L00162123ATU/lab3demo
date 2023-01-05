@@ -8,6 +8,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        String hello=returnHello();
+        System.out.println( hello );
+    }
+    public static String returnHello() {
+        return"Hello World";
     }
 }
+
+
