@@ -23,7 +23,7 @@ public class AppTest
     public void shouldReturnHello()
     {
         String x = App.returnHello();
-        assertEquals(x, "Hello World");
+        assertEquals(x, "Hello World!");
     }
-    
+
 }
