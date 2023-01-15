@@ -28,5 +28,16 @@ pipeline {
                 }
             }
         }
+        stage('Test') {
+            steps {
+                echo 'testing sample project'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'deploy sample project'
+            
+            }
+        }
     }
 }
