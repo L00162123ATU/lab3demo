@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    triggers{
+        // GitHub webhook will trigger pipeline
+        githubPush()
+    }
 
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
@@ -9,7 +13,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Get some code from a GitHub repository
+                // Get code from a GitHub repository
                 git 'https://github.com/L00162123ATU/lab3demo.git'
 
                 // Run Maven on a Unix agent.
